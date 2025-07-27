@@ -1,0 +1,16 @@
+networks:
+  default:
+    name: xoxxox_netmid
+    external: true
+services:
+  xoxxox_tttgpt:
+    image: xoxxox_envoai:001
+    container_name: xoxxox_tttgpt
+    volumes:
+    - ../../../export:/opt/common
+    env_file:
+    - ./envdir.txt
+    - ${HOME}/sec/key/.envath_oai.txt
+    ports:
+    - 12301:80
+    command: "python /opt/common/bin/xoxxox/srvttt.py --engine xoxxox/engine_tttgpt"
