@@ -31,7 +31,7 @@ class TttPrc:
     jsnans = self.client.chat.completions.create(
       model=self.nmodel,
       messages=lstmsg,
-      max_completion_tokens=self.maxlen
+      max_tokens=self.maxlen
     )
     #print("lstmsg[" + str(lstmsg) + "]") # DBG
     txtans = jsnans.choices[0].message.content
