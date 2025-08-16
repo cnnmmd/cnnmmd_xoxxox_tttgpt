@@ -4,7 +4,7 @@ networks:
     external: true
 services:
   xoxxox_tttgpt:
-    image: xoxxox_envoai:001
+    image: xoxxox/envoai:001
     container_name: xoxxox_tttgpt
     volumes:
     - ../../../export:/opt/common
