@@ -13,4 +13,4 @@ services:
     - ${HOME}/sec/key/.envath_oai.txt
     ports:
     - 12301:80
-    command: "python /opt/common/bin/xoxxox/srvttt.py --engine xoxxox/engine_tttgpt"
+    command: "python /opt/common/bin/xoxxox/srvttt_opt.py --engine xoxxox/engine_tttgpt"
