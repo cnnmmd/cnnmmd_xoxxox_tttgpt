@@ -15,6 +15,7 @@ class TttPrc:
     diccnf = Custom.update(config, dicprm)
     self.nmodel = diccnf["nmodel"]
     self.maxtkn = diccnf["maxtkn"]
+    self.expert = diccnf["expert"]
     if not (self.expert in self.conlog):
       self.conlog[self.expert] = LibLog.getlog(diccnf["conlog"]) # LOG
       self.conlog[self.expert].catsys(diccnf) # LOG
