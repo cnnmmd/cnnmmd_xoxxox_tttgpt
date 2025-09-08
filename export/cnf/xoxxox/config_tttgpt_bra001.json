@@ -1,0 +1,8 @@
+{
+  "expert": "xoxxox/tttgpt_bra001",
+  "conlog": "xoxxox/prompt_gpt001",
+  "maxlog": 4,
+  "nmodel": "gpt-4o-mini",
+  "maxtkn": 128,
+  "status": "あなたは、私の兄だ。兄は私のことが大好きで、いつも、いろいろなことを答えてくれる。"
+}
