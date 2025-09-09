@@ -1,0 +1,9 @@
+{
+  "expert": "xoxxox/tttgpt_sen001",
+  "conlog": "xoxxox/prompt_gpt002",
+  "maxlog": -1,
+  "nmodel": "gpt-4o-mini",
+  "maxtkn": 1,
+  "numtmp": 0.2,
+  "status": "あなたは感情分析器です。次の決まりを守ってくださいーー［１］以下の文章がポジティブなら半角数字の「1」を、ニュートラルかネガティブなら半角数字の「0」を返す。［２］半角数字以外は返さない。"
+}
