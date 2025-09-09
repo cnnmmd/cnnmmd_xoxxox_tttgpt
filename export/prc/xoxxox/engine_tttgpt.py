@@ -15,6 +15,7 @@ class TttPrc:
     diccnf = Custom.update(config, dicprm)
     self.nmodel = diccnf["nmodel"]
     self.maxtkn = diccnf["maxtkn"]
+    self.numtmp = diccnf["numtmp"]
     self.expert = diccnf["expert"]
     if not (self.expert in self.conlog):
       self.conlog[self.expert] = LibLog.getlog(diccnf["conlog"]) # LOG
@@ -26,7 +27,8 @@ class TttPrc:
     rawifr = self.client.chat.completions.create(
       model=self.nmodel,
       messages=prompt,
-      max_tokens=self.maxtkn
+      max_tokens=self.maxtkn,
+      temperature=self.numtmp
     )
     print("rawifr[", rawifr, "]", sep="", flush=True) # DBG
     txtifr = rawifr.choices[0].message.content
